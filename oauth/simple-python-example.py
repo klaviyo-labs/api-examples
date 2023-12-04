@@ -105,7 +105,7 @@ def refresh_access_token():
     response = requests.post(KLAVIYO_TOKEN_URL, headers=headers, data=data)
 
     print('<pre>' + json.dumps(response.json(), indent=4) + '</pre>')
-    if response.status_code is 200:
+    if response.status_code == 200:
         # Update the stored token info
         token_data_store.update({customer_id: response.json()})
     if response.status_code is 400 and response.json().get('error') == 'invalid_grant':
