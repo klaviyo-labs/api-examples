@@ -108,7 +108,7 @@ def refresh_access_token():
     if response.status_code == 200:
         # Update the stored token info
         token_data_store.update({customer_id: response.json()})
-    if response.status_code is 400 and response.json().get('error') == 'invalid_grant':
+    if response.status_code == 400 and response.json().get('error') == 'invalid_grant':
         # This could be due to the customer uninstalling the integration in Klaviyo, token expiration after 90 days
         # of no-use, token revocation by Klaviyo's internal systems for security reasons, or an incorrect token.
         # 1. Disconnect the integration on your end since the customer will need to re-authorize
