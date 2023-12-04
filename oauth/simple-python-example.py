@@ -131,7 +131,7 @@ def make_api_call_with_refresh():
         # Token is expired, refresh it.
         # Note: You should have a retry mechanism here to prevent an infinite loop
         refresh_access_token()
-        make_api_call_with_refresh()
+        return make_api_call_with_refresh()
     else:
         # Return the API response
         return response.json()
