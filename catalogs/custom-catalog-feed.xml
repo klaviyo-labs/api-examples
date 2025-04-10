@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Products>
+  <Product>
+    <id>sandals123</id>
+    <title>Chunky Sandals</title>
+    <link>https://www.mystore.com/shop/shoes/sandals/chunky-sandals</link>
+    <description>These chunky sandals are perfect for those who embrace a blend of comfort and style. Featuring a robust platform sole, these sandals offer both height and support, making them ideal for all-day wear. The sleek leather and the chunky sole create a contemporary aesthetic, suitable for both casual outings and more adventurous fashion endeavors.</description>
+    <price>29.99</price>
+    <image_link>https://images.unsplash.com/photo-1562273138-f46be4ebdf33?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</image_link>
+    <categories>FOOTWEAR</categories>
+    <inventory_quantity>25</inventory_quantity>
+    <inventory_policy>1</inventory_policy>
+  </Product>
+    <Product>
+    <id>boots123</id>
+    <title>Brown Leather Boots</title>
+    <link>https://www.mystore.com/shop/shoes/boots/brown-leather-boots</link>
+    <description>These high-ankle boots blend rugged durability with contemporary style. Made from high-quality leather, they feature a matte finish that complements their sturdy construction.Perfect for adding a bold statement to any outfit, these versatile boots are ideal for both urban adventures and outdoor excursions.</description>
+    <price>89.99</price>
+    <image_link>https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</image_link>
+    <categories>FOOTWEAR</categories>
+    <inventory_quantity>25</inventory_quantity>
+    <inventory_policy>1</inventory_policy>
+  </Product>
+    <Product>
+    <id>bomber123</id>
+    <title>Bomber Jacket</title>
+    <link>https://www.mystore.com/shop/outerwear/jackets/bomber-jacket</link>
+    <description>This classic, stylish piece that effortlessly merges modern design with timeless appeal. Zip-up front closure and pockets along the sides provide both functionality and style. This versatile piece is perfect for adding a chic, urban touch to any outfit.</description>
+    <price>50</price>
+    <image_link>https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</image_link>
+    <categories>APPAREL</categories>
+    <inventory_quantity>25</inventory_quantity>
+    <inventory_policy>1</inventory_policy>
+  </Product>
+</Products>
