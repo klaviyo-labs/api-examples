@@ -1,3 +1,4 @@
+# sample cURL request to the Bulk Create Catalog Items endpoint. This code is used in the Set up a custom catalog in Klaviyo YouTube video: https://www.youtube.com/watch?v=GL6pWtE-LBM&list=PLHkNfHgtxcUanrkMnKPdkRzuWU7MGv_xM&index=10
 curl --request POST \
      --url https://a.klaviyo.com/api/catalog-item-bulk-create-jobs \
      --header 'Authorization: Klaviyo-API-Key your-private-api-key' \
