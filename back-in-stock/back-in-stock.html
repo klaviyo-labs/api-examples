@@ -1,0 +1,25 @@
+<!-- this file contains the HTML added to a Shopify liquid file -->
+<button
+ id="notify-button"
+ type="submit"
+ name="bis"
+ class="product-form__submit button button--full-width button--primary"
+>
+ <span> Notify me when back in stock </span>
+ {%- render 'loading-spinner' -%}
+</button>
+<form id="bis-form" class="form-popup" onsubmit="return false;" style="display: none;">
+  <h4>Enter your email address to be notified by email when this product is restocked.</h4>
+  <input
+    type="text"
+    placeholder="Enter email"
+    name="email"
+    style="width: 70%;padding: 10px; font-family: sans-serif;font-size: 16px;border-radius: 15px; border: 1px solid #453734;"
+    id="bis_input"
+    required
+   >
+   <button type="submit" class="product-form__submit button button--secondary">Submit</button>
+</form>
+<div id="success_message" style="display:none;">
+   <p>Thank you for submitting! We will let you know as soon as this product is back in stock.</p>
+</div>
