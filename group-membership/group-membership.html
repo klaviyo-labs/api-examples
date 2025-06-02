@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script>
+      const icedCoffeeSegment = 'QQ77Hz';
+      const hotCoffeeSegment = 'SZ52L9';
+      klaviyo.getGroupMembership([icedCoffeeSegment]).then((res) => {
+        if (res.includes(icedCoffeeSegment)) {
+          document.querySelector('.banner__heading').innerText = 'Chill out with an iced coffee';
+          document.querySelector('.banner__text').innerText="Introducing Beantown’s refreshing new iced coffee line, crafted to energize your day with every chilled sip. Whether you're starting your morning or seeking an afternoon pick-me-up, Beantown iced coffee delivers the ultimate refreshment. Discover your new favorite way to stay cool today!";
+        } else if (res.includes(hotCoffeeSegment)) {
+          document.querySelector('.banner__heading').innerText = 'Warm your soul with our beloved blends';
+          document.querySelector('.banner__text').innerText="Snuggle up with Beantown’s most cherished hot blends, where every cup feels like a cozy embrace. Our expertly roasted beans create rich, aromatic brews that wrap you in warmth and comfort. Whether you're enjoying a quiet morning or sharing stories by the fireplace, our flavors invite you to savor each moment. Discover the heartwarming taste that makes Beantown Coffee a staple in homes everywhere. Indulge in the perfect cup today!";
+        }
+      });
+    </script>
+  </body>
+</html>
