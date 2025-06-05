@@ -1,4 +1,4 @@
-# sample cURL request to the Create Client Event endpoint. This code is used in the Set up a custom catalog in Klaviyo YouTube video: https://www.youtube.com/watch?v=ksvZ5Kdvf8o
+# sample cURL request to the Create Event endpoint. This code is used in the Set up a custom catalog in Klaviyo YouTube video: https://www.youtube.com/watch?v=ksvZ5Kdvf8o
 curl --request POST \
      --url https://a.klaviyo.com/api/events \
      --header 'Authorization: Klaviyo-API-Key your-private-api-key' \
