@@ -1,3 +1,4 @@
+# sample cURL request to the Create or Update Profile endpoint to update a profile. This code is used in the Create and update a Klaviyo profile via API YouTube video: https://www.youtube.com/watch?v=Lir9g0pQfCM.
 curl --request POST \
      --url https://a.klaviyo.com/api/profile-import \
      --header 'Authorization: Klaviyo-API-Key your-private-api-key' \
