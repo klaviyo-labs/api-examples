@@ -1,3 +1,4 @@
+# sample cURL request to the Create Client Event endpoint. This code is used in the Set up a custom catalog in Klaviyo YouTube video: https://www.youtube.com/watch?v=ksvZ5Kdvf8o
 curl --request POST \
      --url https://a.klaviyo.com/client/events?company_id=Y8LNjW \
      --header 'accept: application/vnd.api+json' \
