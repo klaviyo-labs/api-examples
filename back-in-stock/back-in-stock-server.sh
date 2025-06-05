@@ -1,3 +1,4 @@
+# sample cURL request to the Create Back in Stock Subscription endpoint. This code is used in the Set up back in stock in Klaviyo via API YouTube video: https://www.youtube.com/watch?v=pXIFuXOJOrE
 curl --request POST \
      --url https://a.klaviyo.com/api/back-in-stock-subscriptions \
      --header 'Authorization: Klaviyo-API-Key your-private-api-key' \
