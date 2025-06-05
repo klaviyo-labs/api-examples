@@ -1,3 +1,4 @@
+# This code is used in the Client- and server-side tracking with Klaviyo APIs YouTube video: https://www.youtube.com/watch?v=x0RjkP8T13A to send a server-side Registered for seminar event.
 import requests
 import os
 from klaviyo import KlaviyoAPI
