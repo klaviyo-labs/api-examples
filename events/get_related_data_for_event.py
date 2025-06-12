@@ -2,8 +2,7 @@
 import os
 from klaviyo_api import KlaviyoAPI
 
-# klaviyo = KlaviyoAPI(os.environ["private_api_key"])
-klaviyo = KlaviyoAPI('pk_78652a565cd4aa0579afbfdf56eb821dda')
+klaviyo = KlaviyoAPI(os.environ["private_api_key"])
 
 # example 1: get related profile data for a specific event. Replace event_id with the ID of the event you are interested in.
 # note that this is the event's Activity ID rather than Unique ID.
