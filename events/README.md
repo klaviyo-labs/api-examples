@@ -1,5 +1,5 @@
 # Events API Code Examples
-This folder is part of the api-examples repository and contains practical code snippets demonstrating common use cases for the Klaviyo Events API. Our goal is to provide clear, ready-to-use examples that align with the scenarios outlined in the Events API Overview.
+This folder is part of the api-examples repository and contains practical code snippets demonstrating common use cases for the Klaviyo Events API. Our goal is to provide clear, ready-to-use examples that align with the scenarios outlined in the [Events API Overview](https://developers.klaviyo.com/en/reference/events_api_overview).
 
 ## What's Inside?
 Each file within this folder corresponds to a specific use case, making it easy to find and implement the functionality you need. These examples illustrate how to track and analyze various customer behaviors within Klaviyo.
