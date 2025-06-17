@@ -4,6 +4,7 @@
 # note that the filter is URL encoded.
 PROFILE_ID='01G9ATZKKMSZMDB76EN6WVMVGM' 
 
+# replace 'your-private-api-key' with your actual Klaviyo private API key that has read access to events.
 curl --request GET \
      --url 'https://a.klaviyo.com/api/events?filter=equals%28profile_id%2C%27'$PROFILE_ID'%27%29' \
      --header 'Authorization: Klaviyo-API-Key your-private-api-key' \
@@ -13,6 +14,7 @@ curl --request GET \
 # example 2: if you don't know the profile ID, you can use Get Profiles to find it. Set EMAIL_ADDRESS to the email address of the profile you want to retrieve events for.
 EMAIL_ADDRESS='michaela.klaviyo@gmail.com'
 
+# replace 'your-private-api-key' with your actual Klaviyo private API key that has read access to profiles.
 PROFILE_DATA=$(curl --silent --request GET \
      --url "https://a.klaviyo.com/api/profiles?filter=equals(email,'$EMAIL_ADDRESS')" \
      --header "Authorization: Klaviyo-API-Key your-private-api-key" \
@@ -22,6 +24,7 @@ PROFILE_DATA=$(curl --silent --request GET \
 PROFILE_ID=$(echo $PROFILE_DATA | jq -r '.data[0].id')
 
 # now that we have the profile ID, we can get all events for this profile
+# replace 'your-private-api-key' with your actual Klaviyo private API key that has read access to events.
 curl --request GET \
      --url "https://a.klaviyo.com/api/events?filter=equals(profile_id,'$PROFILE_ID')" \
      --header "Authorization: Klaviyo-API-Key your-private-api-key" \
