@@ -5,6 +5,8 @@
 # example 1: get all Opened Email events. To use this request, set OPENED_EMAIL_METRIC_ID to be the Opened Email metric ID from your Klaviyo account.
 # note that the filter is URL encoded. 
 OPENED_EMAIL_METRIC_ID='Xj5uUn'
+
+# replace 'your-private-api-key' with your actual Klaviyo private API key that has read access to events.
 curl --request GET \
      --url 'https://a.klaviyo.com/api/events?filter=equals%28metric_id%2C%27'$OPENED_EMAIL_METRIC_ID'%27%29' \
      --header 'Authorization: Klaviyo-API-Key your-private-api-key' \
@@ -14,6 +16,8 @@ curl --request GET \
 # example 2: get all Clicked Email events from November 2024. Set CLICKED_EMAIL_METRIC_ID to the Clicked Email metric ID from your Klaviyo account. Set START_DATE and END_DATE as your dates of interest.
 # note that the filter is URL encoded. 
 CLICKED_EMAIL_METRIC_ID='UmeLw3'
+
+# replace 'your-private-api-key' with your actual Klaviyo private API key that has read access to events.
 START_DATE="2024-11-01T00:00:00"
 END_DATE="2024-12-01T00:00:00"
 curl --request GET \

@@ -3,6 +3,7 @@
 # example 1: get related profile data for a specific event. Set EVENT_ID to the event ID from your Klaviyo account.
 EVENT_ID='6e3MwdH2fWm'
 
+# replace 'your-private-api-key' with your actual Klaviyo private API key that has read access to events and profiles.
 curl --request GET \
      --url "https://a.klaviyo.com/api/events/$EVENT_ID/profile" \
      --header "Authorization: Klaviyo-API-Key your-private-api-key" \
@@ -10,6 +11,7 @@ curl --request GET \
      --header "revision: 2025-04-15"
 
 # example 2: get related metric data for a specific event. Set EVENT_ID to the event ID from your Klaviyo account.
+# replace 'your-private-api-key' with your actual Klaviyo private API key that has read access to events and metrics.
 curl --request GET \
      --url "https://a.klaviyo.com/api/events/$EVENT_ID/metric" \
      --header "Authorization: Klaviyo-API-Key your-private-api-key" \

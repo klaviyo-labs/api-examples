@@ -3,14 +3,24 @@
 import os
 from klaviyo_api import KlaviyoAPI
 
-klaviyo = KlaviyoAPI(os.environ["private_api_key"])
+# load your private API key from environment variables. 
+# ensure you have set the environment variable "private_api_key" with Klaviyo private API key that has write access to events. 
+private_api_key = os.environ.get("private_api_key")
 
+# instantiate the KlaviyoAPI client with your private API key.
+klaviyo = KlaviyoAPI(private_api_key)
+
+# replace the password reset link and customer email with your values.
+password_reset_link = "https://www.yourwebsite.com/reset-password?unique_token=12345"
+customer_email = "customer@email.com"
+
+# create the Reset Password event.
 body = {
     "data": {
         "type": "event",
         "attributes": {
             "properties": {
-                "PasswordResetLink": "https://www.yourwebsite.com/reset-password?unique_token=12345"
+                "PasswordResetLink": password_reset_link
             },
             "metric": {
                 "data": {
@@ -24,7 +34,7 @@ body = {
                 "data": {
                     "type": "profile",
                     "attributes": {
-                        "email": "customer@email.com"
+                        "email": customer_email
                     }
                 }
             }

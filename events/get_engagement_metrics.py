@@ -5,7 +5,12 @@ import os
 from klaviyo_api import KlaviyoAPI
 from datetime import datetime
 
-klaviyo = KlaviyoAPI(os.environ["private_api_key"])
+# load your private API key from environment variables. 
+# ensure you have set the environment variable "private_api_key" with Klaviyo private API key that has read access to events. 
+private_api_key = os.environ.get("private_api_key")
+
+# instantiate the KlaviyoAPI client with your private API key.
+klaviyo = KlaviyoAPI(private_api_key)
 
 # example 1: get all Opened Email events. Replace opened_email_metric_id with the Opened Email metric ID from your account.
 opened_email_metric_id = 'Xj5uUn'
