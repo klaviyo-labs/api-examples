@@ -6,6 +6,10 @@ Each file within this folder corresponds to a specific use case, making it easy 
 
 This folder also contains the create_event_youtube folder, which contains the code used in the [Create custom events with Klaviyo's APIs](https://www.youtube.com/watch?v=ksvZ5Kdvf8o&pp=0gcJCckAaK0XXGki) YouTube video.
 
+The Python and JavaScript examples use Klaviyo's SDKs:
+- [Python SDK](https://github.com/klaviyo/klaviyo-api-python)
+- [Node SDK](https://github.com/klaviyo/klaviyo-api-node)
+
 ## How to Use These Examples
 - Browse by Use Case: Navigate to find the specific event scenario you're interested in. Each use case has a corresponding shell script as well as Python and JavaScript examples.
 - Review the Code: Each example includes comments to explain the logic and structure of the API call.
