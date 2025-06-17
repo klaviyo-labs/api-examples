@@ -2,8 +2,12 @@
 import os
 from klaviyo_api import KlaviyoAPI
 
-# klaviyo = KlaviyoAPI(os.environ["private_api_key"])
-klaviyo = KlaviyoAPI('pk_78652a565cd4aa0579afbfdf56eb821dda')
+# load your private API key from environment variables. 
+# ensure you have set the environment variable "private_api_key" with Klaviyo private API key that has read access to events, profiles, and metrics. 
+private_api_key = os.environ.get("private_api_key")
+
+# instantiate the KlaviyoAPI client with your private API key.
+klaviyo = KlaviyoAPI(private_api_key)
 
 # example 1: get related profile data for a specific event. Replace event_id with the ID of the event you are interested in.
 # note that this is the event's Activity ID rather than Unique ID.
