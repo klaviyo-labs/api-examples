@@ -21,10 +21,6 @@ customer_email = 'michaela.klaviyo@gmail.com'
 
 # use the Get Profiles endpoint to retrieve the profile ID using the email address.
 profile = klaviyo.Profiles.get_profiles(filter=f"equals(email,'{customer_email}')")
-<<<<<<< HEAD
-id = profile.data[0].id
-=======
 profile_id = profile.data[0].id
->>>>>>> 7d46ff0441e406f7a065ff912078ea84ed4e48f6
 
 klaviyo.Events.get_events(filter=f"equals(profile_id,'{profile_id}')")
