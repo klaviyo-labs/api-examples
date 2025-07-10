@@ -6,7 +6,7 @@ from klaviyo_api import KlaviyoAPI
 from datetime import datetime
 
 # load your private API key from environment variables. 
-# ensure you have set the environment variable "KLAVIYO_API_KEY" with Klaviyo private API key
+# ensure you have set the environment variable "KLAVIYO_API_KEY" with a Klaviyo private API key that has read access to metrics and flows.
 private_api_key = os.environ.get("KLAVIYO_API_KEY")
 if not private_api_key:
     raise ValueError("Please set the KLAVIYO_API_KEY environment variable.")

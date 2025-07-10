@@ -3,7 +3,7 @@
 
 # load your private API key from environment variables
 # ensure you have set the environment variable "KLAVIYO_API_KEY" with Klaviyo private API key
-PRIVATE_API_KEY='your-private-api-key' # replace with your actual Klaviyo private API key
+PRIVATE_API_KEY="${KLAVIYO_API_KEY}"  # ensure this environment variable is set before running the script and that your private API key has read access to metrics and flows.
 
 # Get flows triggered by your metric
 # To retrieve flow-specific performance data at the account level, we first need to identify which flows 

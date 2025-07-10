@@ -3,7 +3,7 @@
 
 import { ApiKeySession, ReportingApi, MetricsApi } from 'klaviyo-api'
 
-// load private API key as an environment variable. Note that this API key needs to have 
+// load private API key as an environment variable. Note that this API key needs to have read access to metrics and flows.
 // if using a .env file, ensure to load it using dotenv or similar package. 
 const apiKey = process.env.KLAVIYO_API_KEY
 if (!apiKey) {
