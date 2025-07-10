@@ -1,5 +1,5 @@
 // this sample JavaScript code gets flow-specific performance data related to an app metrics.
-// for more informationI, see https://developers.klaviyo.com/en/docs/get_performance_data_for_flows_triggered_by_your_app_metrics 
+// for more information, see https://developers.klaviyo.com/en/docs/get_performance_data_for_flows_triggered_by_your_app_metrics 
 
 import { ApiKeySession, ReportingApi, MetricsApi } from 'klaviyo-api'
 
