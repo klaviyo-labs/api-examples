@@ -6,7 +6,7 @@ from klaviyo_api import KlaviyoAPI
 from datetime import datetime
 
 # load your private API key from environment variables. 
-# ensure you have set the environment variable "private_api_key" with Klaviyo private API key that has read access to segment, campaigns, flows, and forms.
+# ensure you have set the environment variable "KLAVIYO_API_KEY" with Klaviyo private API key that has read access to segment, campaigns, flows, and forms.
 private_api_key = os.environ.get("KLAVIYO_API_KEY")
 
 # instantiate the KlaviyoAPI client with your private API key.

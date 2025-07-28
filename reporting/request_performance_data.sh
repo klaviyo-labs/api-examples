@@ -2,7 +2,7 @@
 # for more information on the API, see https://developers.klaviyo.com/en/reference/reporting_api_overview
 
 # load your private API key from environment variables
-# ensure you have set the environment variable "private_api_key" with Klaviyo private API key
+# ensure you have set the environment variable "KLAVIYO_API_KEY" with Klaviyo private API key
 PRIVATE_API_KEY="${KLAVIYO_API_KEY}"  # ensure this environment variable is set before running the script and that your private API key has read access to segment, campaigns, flows, and forms.
 
 # set the conversion metric ID. This example uses the same Placed Order metric ID for all examples.
