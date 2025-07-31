@@ -10,7 +10,7 @@ curl --request POST \
      --header "Authorization: Klaviyo-API-Key $PRIVATE_API_KEY" \
      --header 'accept: application/vnd.api+json' \
      --header 'content-type: application/vnd.api+json' \
-     --header 'revision: 2025-04-15' \
+     --header 'revision: 2025-07-15' \
      --data '
 {
     "data": {
