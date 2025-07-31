@@ -34,7 +34,7 @@ curl --request POST \
                     }
                 ]
             }
-        }  ,
+        } ,
         "relationships": {
             "list": {
                 "data": {
