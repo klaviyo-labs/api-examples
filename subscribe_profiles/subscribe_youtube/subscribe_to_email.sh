@@ -42,7 +42,7 @@ curl --request POST \
                     "id": "TpkKTE"
                 }
             }
-        }  
+        }
     }
 }
 '
