@@ -55,14 +55,16 @@ curl --request POST \
                         }
                     }
                 ]
-            },
+            }
+        },
+        "relationships": {
             "list": {
                 "data": {
                     "type": "list",
                     "id": "TpkKTE"
                 }
             }
-        }  
+        }
     }
 }
 '
