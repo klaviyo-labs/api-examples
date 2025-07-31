@@ -1,7 +1,9 @@
 # this sample shell script subscribes a profile to an email list using the Klaviyo API.
 # see https://developers.klaviyo.com/en/reference/bulk_subscribe_profiles for more details.
 
-PRIVATE_API_KEY='your-private-api-key' # replace with your actual Klaviyo private API key that has write access to profiles.
+# load your private API key from environment variables
+# ensure you have set the environment variable "KLAVIYO_API_KEY" with Klaviyo private API key
+PRIVATE_API_KEY="${KLAVIYO_API_KEY}"  # ensure this environment variable is set before running the script and that your private API key has write access to profiles.
 
 curl --request POST \
      --url https://a.klaviyo.com/api/profile-subscription-bulk-create-jobs \
